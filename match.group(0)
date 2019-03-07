@@ -1,0 +1,13 @@
+https://stackoverflow.com/questions/14909777/what-does-the-1-in-match-group1-mean
+
+The 1 in match.group(1) represents the first parenthesised subgroup. In your case the first of one.
+
+>>> m = re.match(r"(\w+) (\w+)", "Isaac Newton, physicist")
+>>> m.group(0)       # The entire match
+'Isaac Newton'
+>>> m.group(1)       # The first parenthesized subgroup.
+'Isaac'
+>>> m.group(2)       # The second parenthesized subgroup.
+'Newton'
+>>> m.group(1, 2)    # Multiple arguments give us a tuple.
+('Isaac', 'Newton')
