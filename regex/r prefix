@@ -1,0 +1,8 @@
+https://stackoverflow.com/questions/2241600/python-regex-r-prefix
+
+the 'r' means the the following is a "raw string",
+ie. backslash characters are treated literally instead of signifying special treatment of the following character.
+
+so '\n' is a single newline
+and r'\n' is two characters - a backslash and the letter 'n'
+
